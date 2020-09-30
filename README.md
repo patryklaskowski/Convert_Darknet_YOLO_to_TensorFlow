@@ -114,7 +114,7 @@ python detect.py --weights './checkpoints/license_plate-416' --size '416' --mode
 #### NOTE
 > To run multiple image detection change flag `--images` as with pattern follows `--images './path/to/image1.jpg, ./path/to/image2.jpg'`
 
-<p align="center"><img src="data/results.png"></p>
+<p align="center"><img src="data/result.png"></p>
 
 ### Detect video
 
