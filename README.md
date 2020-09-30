@@ -63,7 +63,7 @@ Path to my `.weights` file: `./data/weights/yolov4_licence_plate.weights`
 
 Path to my `.names` file: `./data/classes/licence_plate.names`
 
-<p align="center"><img src="data/images/license_late_names.png"></p>
+<p align="center"><img src="data/license_late_names.png"></p>
 
 ### 4. Adjust `config.py` file.
 
@@ -75,7 +75,7 @@ File is here: `./core/config.py`. Edit **only** `__C.YOLO.CLASSES` value to be p
 
 According to my `.names` file: `__C.YOLO.CLASSES = "./data/classes/licence_plate.names"`
 
-<p align="center"><img src="data/images/config.png"></p>
+<p align="center"><img src="data/config.png"></p>
 
 ---
 
