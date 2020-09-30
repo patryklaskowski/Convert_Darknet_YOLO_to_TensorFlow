@@ -6,6 +6,9 @@ Darknet YOLO architectures implemented in Tensorflow and Tensorflow Lite.
   <tr>
     <td><img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/></td>
     <td><img src="https://img.shields.io/badge/TensorFlow%20-%23FF6F00.svg?&style=for-the-badge&logo=TensorFlow&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/Google%20Drive%20-%23FF9900.svg?&style=for-the-badge&logo=google-drive&logoColor=white" /></td>
+    <td><img src="https://img.shields.io/badge/YOLO%20v%204%20-%23121011.svg?&style=for-the-badge" /></td>
+    <td><img src="https://img.shields.io/badge/-%23000000.svg?&style=for-the-badge&logo=ios&logoColor=white" /></td>
   </tr>
 </table>
 
