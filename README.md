@@ -2,6 +2,13 @@
 
 Darknet YOLO architectures implemented in Tensorflow and Tensorflow Lite.
 
+<img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/>
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
+<img src="https://img.shields.io/badge/TensorFlow%20-%23FF6F00.svg?&style=for-the-badge&logo=TensorFlow&logoColor=white" />
+[![made-with-TensorFlow](https://img.shields.io/badge/Made%20with-TensorFlow-1f425f.svg)](https://www.tensorflow.org/)
+
+
 ---
 
 ## Before You start:
@@ -22,7 +29,7 @@ pip install -U pip
 pip install -r requirements.txt
 ```
 
-### 2. Put `.weights` file in this directory: `./data/weights/`.
+### 2. Put `.weights` file in `./data/` folder.
 
 File with Darknet YOLO weights that does **not** fit in Tensorflow but Darknet.
 
@@ -39,7 +46,7 @@ File with Darknet YOLO weights that does **not** fit in Tensorflow but Darknet.
   </table>
 </p>
 
-Path to my `.weights` file: `./data/weights/yolov4_licence_plate.weights`
+My `.weights` file is here: `./data/yolov4_licence_plate.weights`
 
 ### 3. Prepare `.names` file respectively to `.weights`.
 `.names` file contains all class labels for specific YOLO weights where each line represents one class name.
@@ -61,7 +68,7 @@ Path to my `.weights` file: `./data/weights/yolov4_licence_plate.weights`
   </table>
 </p>
 
-Path to my `.names` file: `./data/classes/licence_plate.names`
+My `.names` file is here: `./data/classes/licence_plate.names`
 
 <p align="center"><img src="data/license_late_names.png"></p>
 
@@ -82,7 +89,7 @@ According to my `.names` file: `__C.YOLO.CLASSES = "./data/classes/licence_plate
 ### Summarize
 
 So far we have:
-- [x] `.weights` on path `./data/weights/yolov4_licence_plate.weights`
+- [x] `.weights` on path `./data/yolov4_licence_plate.weights`
 - [x] `.names` on path `./data/classes/licence_plate.names`
 - [x] adjusted `__C.YOLO.CLASSES` param inside 'config.py' on path `./core/config.py`
 
@@ -123,12 +130,12 @@ Difference makes `--framework tflite` flag.
 
 ---
 
-# Model has been successfully converted.
+# Model (one of [`.pb`, `.tflite`]) has been successfully converted.
 # Now ready to run.
 
 ---
 
-## Run regular Tensorflow `.pb` model
+## a. Run regular Tensorflow `.pb` model
 
 ### Detect image
 
@@ -151,7 +158,7 @@ python detect_video.py --weights ./checkpoints/license_plate-416 --size 416 --mo
 #### NOTE
 > To run predictions from webcam set `--video` flag argument to `0` as follows `--video 0`.
 
-## Run lightweight Tensorflow Lite `.tflite` model
+## b. Run lightweight Tensorflow Lite `.tflite` model
 
 ### Detect image
 
