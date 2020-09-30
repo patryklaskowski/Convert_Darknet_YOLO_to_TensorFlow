@@ -26,10 +26,10 @@ pip install -r requirements.txt
 
 ### 2. Prepare `.weights` file in directory `Darknet-YOLO-with-Tensorflow/data/weights`.
 
-<table>
+<table border=3>
   <thead>
     <td>yolov4.weights<br>(COCO dataset)</td>
-    <td>yolov4-licence-plate.weights</td>
+    <td>yolov4_licence_plate.weights</td>
   </thead>
   <tr>
     <td><a href="https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights">Download</a></td>
@@ -37,13 +37,28 @@ pip install -r requirements.txt
   </tr>
 </table>
 
-Path of my `.weights` file: `Darknet-YOLO-with-Tensorflow/data/weights/yolov4-licence-plate.weights`
+Path of my `.weights` file: `Darknet-YOLO-with-Tensorflow/data/weights/yolov4_licence_plate.weights`
 
-### 3.
+### 3. Prepare `.names` file according to `.weights`.
+`.names` file contains all classes labels for specific YOLO weights where each line represents one class name.
 
----
+### NOTE
+> `.names.` file for domain `yolov4.weights` is already prepared on path `Darknet-YOLO-with-Tensorflow/data/classes/coco.names`.
+> `coco.names` has 80 rows where each one corresponds to label.
 
-# TODO
+<table border=3>
+  <thead>
+    <td>coco.names</td>
+    <td>licence_plate.names</td>
+  </thead>
+  <tr>
+    <td><a href="data/classes/coco.names">Path</a></td>
+    <td><a href="https://drive.google.com/file/d/1k_8Ltv8WohGswhBgh6-1_fnW5LiCO7h1/view?usp=sharing">Download</a></td>
+  </tr>
+</table>
+
+### 4.  
+
 
 ---
 
