@@ -3,3 +3,4 @@ checkpoints/
 data/yolov4.weights
 core/__pycache__/*
 data/yolov4_licence_plate.weights
+data/classes/licence_plate.names
