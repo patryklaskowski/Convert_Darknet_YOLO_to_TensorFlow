@@ -21,7 +21,9 @@ source env/bin/activate
 pip install -U pip
 pip install -r requirements.txt
 ```
-Now put `.weights` file in directory `Darknet-YOLO-with-Tensorflow/data/weights`. 
+### 2. Prepare `.weights` file in directory `Darknet-YOLO-with-Tensorflow/data/weights`. 
+
+### 3. 
 
 ---
 
