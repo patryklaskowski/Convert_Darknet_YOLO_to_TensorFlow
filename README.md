@@ -3,7 +3,7 @@
 ---
 
 # Darknet-YOLO-with-Tensorflow
-Darknet YOLO architecture implemented in Tensorflow and Tensorflow Lite. 
+Darknet YOLO architecture implemented in Tensorflow and Tensorflow Lite.
 
 ---
 
@@ -12,7 +12,9 @@ Darknet YOLO architecture implemented in Tensorflow and Tensorflow Lite.
 - [ ] Along with weights, `.names` file is required for model to have classes lables reference.
 
 ## Start
+
 ### 1. Prepare environment
+
 ```
 git clone https://github.com/patryklaskowski/Darknet-YOLO-with-Tensorflow.git
 cd Darknet-YOLO-with-Tensorflow
@@ -21,9 +23,21 @@ source env/bin/activate
 pip install -U pip
 pip install -r requirements.txt
 ```
-### 2. Prepare `.weights` file in directory `Darknet-YOLO-with-Tensorflow/data/weights`. 
 
-### 3. 
+### 2. Prepare `.weights` file in directory `Darknet-YOLO-with-Tensorflow/data/weights`.
+
+<table>
+  <thead>
+    <td>yolov4-licence-plate.weights</td>
+  </thead>
+  <tr>
+    <td>[Download](https://drive.google.com/file/d/1ZNGtzrDXavZd-1AFhXlftWoFxXg2Xm09/view?usp=sharing)</td>
+  </tr>
+</table>
+
+`Darknet-YOLO-with-Tensorflow/data/weights/yolov4-licence-plate.weights`
+
+### 3.
 
 ---
 

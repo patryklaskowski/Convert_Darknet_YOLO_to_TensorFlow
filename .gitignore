@@ -1,3 +1,4 @@
 env
 checkpoints/
 data/yolov4.weights
+data/yolov4-licence-plate.weights
