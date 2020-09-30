@@ -28,14 +28,16 @@ pip install -r requirements.txt
 
 <table>
   <thead>
+    <td>yolov4.weights<br>(COCO dataset)</td>
     <td>yolov4-licence-plate.weights</td>
   </thead>
   <tr>
-    <td>[Download](https://drive.google.com/file/d/1ZNGtzrDXavZd-1AFhXlftWoFxXg2Xm09/view?usp=sharing)</td>
+    <td><a href="https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights">Download</a></td>
+    <td><a href="https://drive.google.com/file/d/1ZNGtzrDXavZd-1AFhXlftWoFxXg2Xm09/view?usp=sharing">Download</a></td>
   </tr>
 </table>
 
-`Darknet-YOLO-with-Tensorflow/data/weights/yolov4-licence-plate.weights`
+Path of my `.weights` file: `Darknet-YOLO-with-Tensorflow/data/weights/yolov4-licence-plate.weights`
 
 ### 3.
 
