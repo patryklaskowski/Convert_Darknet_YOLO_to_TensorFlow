@@ -1,4 +1,4 @@
-# Darknet-YOLO-with-Tensorflow
+# Convert_Darknet_YOLO_to_TensorFlow
 
 Darknet YOLO architectures implemented in Tensorflow and Tensorflow Lite.
 
@@ -17,15 +17,15 @@ Darknet YOLO architectures implemented in Tensorflow and Tensorflow Lite.
 ## Before You start:
 
 - [ ] In the first place You need to **have Darknet YOLOv3 or v4 weights to work with**. Weights might be either **custom trained** or **pre-trained** on benchmark [COCO dataset](https://cocodataset.org/#home). To download pre-trained `yolov4.weights` click [here](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights).
-- [ ] Except weights, `.names` file is required for model to have class labels reference. For benchmark COCO dataset, file `coco.names` is already available [here](https://github.com/patryklaskowski/Darknet-YOLO-with-Tensorflow/blob/master/data/classes/coco.names).
+- [ ] Except weights, `.names` file is required for model to have class labels reference. For benchmark COCO dataset, file `coco.names` is already available [here](https://github.com/patryklaskowski/Convert_Darknet_YOLO_to_TensorFlow/blob/master/data/classes/coco.names).
 
 ## Start
 
 ### 1. Prepare environment
 
 ```
-git clone https://github.com/patryklaskowski/Darknet-YOLO-with-Tensorflow.git && \
-cd Darknet-YOLO-with-Tensorflow && \
+git clone https://github.com/patryklaskowski/Convert_Darknet_YOLO_to_TensorFlow.git && \
+cd Convert_Darknet_YOLO_to_TensorFlow && \
 python3.7 -m venv env && \
 source env/bin/activate && \
 python3.7 -m pip install -U pip && \
