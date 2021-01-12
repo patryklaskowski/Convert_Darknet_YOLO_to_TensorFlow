@@ -24,17 +24,17 @@ Darknet YOLO architectures implemented in Tensorflow and Tensorflow Lite.
 ### 1. Prepare environment
 
 ```
-git clone https://github.com/patryklaskowski/Darknet-YOLO-with-Tensorflow.git
-cd Darknet-YOLO-with-Tensorflow
-python3 -m venv env
-source env/bin/activate
-pip install -U pip
-pip install -r requirements.txt
+git clone https://github.com/patryklaskowski/Darknet-YOLO-with-Tensorflow.git && \
+cd Darknet-YOLO-with-Tensorflow && \
+python3.7 -m venv env && \
+source env/bin/activate && \
+python3.7 -m pip install -U pip && \
+python3.7 -m pip install -r requirements.txt
 ```
 
 ### 2. Put `.weights` file in `./data/` folder.
 
-File with Darknet YOLO weights that does **not** fit in Tensorflow but Darknet.
+Darknet YOLOv4 weights to download.
 
 <p align='center'>
   <table border=3>
@@ -112,7 +112,7 @@ Required flags:
 - `--model` : one of ['yolov3', yolov3] `yolov4`
 
 ```
-python save_model.py --weights ./data/yolov4_licence_plate.weights --output ./checkpoints/license_plate-416 --input_size 416 --model yolov4
+python3.7 save_model.py --weights ./data/yolov4_licence_plate.weights --output ./checkpoints/license_plate-416 --input_size 416 --model yolov4
 ```
 
 **This creates new folder `./checkpoints/license_plate-416` that stores `saved_model.pb` - actual Tensorflow model.**
@@ -123,8 +123,8 @@ This option is lightweight. This solution trade off speed over accuracy.<br>
 Great for edge devices such as mobile phones, raspberry pi and others.
 
 ```
-python save_model.py --weights ./data/yolov4_licence_plate.weights --output ./checkpoints/license_plate-416 --input_size 416 --model yolov4 --framework tflite
-python convert_tflite.py --weights ./checkpoints/license_plate-416 --output ./checkpoints/yolov4_license_plate-416.tflite
+python3.7 save_model.py --weights ./data/yolov4_licence_plate.weights --output ./checkpoints/license_plate-416 --input_size 416 --model yolov4 --framework tflite
+python3.7 convert_tflite.py --weights ./checkpoints/license_plate-416 --output ./checkpoints/yolov4_license_plate-416.tflite
 ```
 
 Difference makes `--framework tflite` flag.
@@ -143,7 +143,7 @@ Difference makes `--framework tflite` flag.
 ### Detect image
 
 ```
-python detect.py --weights ./checkpoints/license_plate-416 --size 416 --model yolov4 --images ./data/images/license_plate.jpg
+python3.7 detect.py --weights ./checkpoints/license_plate-416 --size 416 --model yolov4 --images ./data/images/license_plate.jpg
 ```
 
 <p align="center"><img src="data/result.png"></p>
@@ -154,7 +154,7 @@ python detect.py --weights ./checkpoints/license_plate-416 --size 416 --model yo
 ### Detect video
 
 ```
-python detect_video.py --weights ./checkpoints/license_plate-416 --size 416 --model yolov4 --video ./data/video/road.mp4 --output ./detections/results.avi
+python3.7 detect_video.py --weights ./checkpoints/license_plate-416 --size 416 --model yolov4 --video ./data/video/road.mp4 --output ./detections/results.avi
 ```
 <p align="center"><img src="data/results.gif"></p>
 
@@ -166,13 +166,13 @@ python detect_video.py --weights ./checkpoints/license_plate-416 --size 416 --mo
 ### Detect image
 
 ```
-python detect.py --weights ./checkpoints/yolov4_license_plate-416.tflite --size 416 --model yolov4 --images ./data/images/license_plate.jpg --framework tflite
+python3.7 detect.py --weights ./checkpoints/yolov4_license_plate-416.tflite --size 416 --model yolov4 --images ./data/images/license_plate.jpg --framework tflite
 ```
 
 ### Detect video
 
 ```
-python detect_video.py --weights ./checkpoints/yolov4_license_plate-416.tflite --size 416 --model yolov4 --video ./data/video/road.mp4 --output ./detections/results.avi --framework tflite
+python3.7 detect_video.py --weights ./checkpoints/yolov4_license_plate-416.tflite --size 416 --model yolov4 --video ./data/video/road.mp4 --output ./detections/results.avi --framework tflite
 ```
 
 ---
@@ -240,5 +240,4 @@ detect_video.py:
 ---
 
 ## References:
-- [hunglc007](https://github.com/theAIGuysCode/tensorflow-yolov4-tflite)
-- [theAIGuysCode](https://github.com/hunglc007/tensorflow-yolov4-tflite)
+- [hunglc007](https://github.com/hunglc007/tensorflow-yolov4-tflite)
